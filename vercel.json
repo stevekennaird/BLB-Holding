@@ -1,6 +1,12 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "buildCommand": null,
-  "outputDirectory": "public"
+  "buildCommand": "cp img-style-test.html public/img-style-test.html",
+  "outputDirectory": "public",
+  "rewrites": [
+    {
+      "source": "/image-style-test-survey",
+      "destination": "/img-style-test.html"
+    }
+  ]
 }
